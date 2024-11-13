@@ -10,6 +10,12 @@
     <h1>Vintage Mustang Toy Car</h1>
     <div id="carProperties">
         <button onclick="showCarDetails()">Show Details of the Car</button>
+        <label for="carColor">Choose Car Color:</label>
+        <!-- Dropdown for color selection -->
+        <select id="carColor" onchange="changeColor(this.value)">
+            <option value="Green">Green</option>
+            <option value="White">White</option>
+        </select>
         <p id="carDetails"></p>
     </div>
     <script src="./js/script.js"></script>
