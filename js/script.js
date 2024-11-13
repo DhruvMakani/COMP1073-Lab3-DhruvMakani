@@ -31,3 +31,23 @@ function showCarDetails() {
       <p>Availability: ${myCar.availability}</p>
   `;
 }
+
+// Function to change the car color
+function changeColor(color) {
+  myCar.color = color;
+  showCarDetails();
+  const carImage = document.getElementById("carImage");
+
+  // If statement to switch the image when the color is selected
+    if (color === "White") {
+      myCar.SKU = "31167-MAI-WHITE";
+      myCar.UPC = "764072005737" 
+      carImage.src = "./img/white.jpg";
+
+    } else if (color === "Green") {
+      myCar.SKU = "31166-MAI-GREEN";
+      myCar.UPC = "764072005706"
+      carImage.src = "./img/green.jpg";
+    }
+    showCarDetails();
+}
