@@ -46,3 +46,26 @@ button:hover {
     border-radius: 5px;
     font-size: 0.9em;
 }
+
+/* Car Details Text */
+#carDetails {
+    font-size: 0.9em;
+    color: black;
+    margin-top: 10px;
+}
+
+/* Car Image */
+#carImage {
+    margin-top: 15px;
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Label */
+label {
+    display: flex;
+    justify-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+}
